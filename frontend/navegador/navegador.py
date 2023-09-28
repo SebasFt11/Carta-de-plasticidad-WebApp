@@ -3,12 +3,12 @@ import dash_bootstrap_components as dbc
 from dash import html
 
 navegador = dbc.Container((
-    html.H1('Clasificación de suelos'),
-    html.Hr(),
-    html.H2('Sebastian David Lopez'),
+    html.H1('Clasificación de suelos', style = {'color': 'white'}),
+    html.Hr(style = {"border-color" : "white", "border-width" : "5px"}),
+    html.H2('Sebastian David Lopez', style = {'color': 'white'}),
     dbc.Row([
-         dbc.Col("visualización", md=3, style = {'background-color' : 'black', 'color' : 'white'}),
-         dbc.Col("texto", md=6, style = {'background-color' : 'gray'}),
-         dbc.Col("usuario", md=3, style = {'background-color' : 'yellow'}),
+         dbc.Col("¿Cómo funciona?", md=3, style = {'height' : '40px','background-color' : '#B4D6E4', 'color' : 'black', 'border-top' : '5px solid #055E97', 'border-right' : '1px solid white'}),
+         dbc.Col("Características del suelo", md=6, style = {'background-color' : '#B4D6E4', 'border-top' : '5px solid #055E97', 'border-right' : '1px solid white'}),
+         dbc.Col("¿Qué suelo tengo?", md=3, style = {'background-color' : '#B4D6E4', 'border-top' : '5px solid #055E97'}),
     ])
 ))

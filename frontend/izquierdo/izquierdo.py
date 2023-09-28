@@ -8,7 +8,8 @@ izquierdo = dbc.Container([
     html.Div([
         html.Label('Area del circulo'),
         dcc.Input(id = 'entradaCirculo', value = 5, type = 'number'),
-        html.Label(id = 'salidaCirculo')
-
+        html.Label(id = 'salidaCirculo'),
+        html.Img(src= 'Imagen portada página.png', alt = 'portada', style={'max-width': '100%'}),
     ])
+    
 ])

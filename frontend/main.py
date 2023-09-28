@@ -8,8 +8,8 @@ from .izquierdo.izquierdo import izquierdo
 
 layout = dbc.Container([
     dbc.Row([
-        dbc.Col(navegador, md=12, style = {'background-color' : 'red'}),
-        dbc.Col(izquierdo, md=8, style = {'background-color' : 'green'}),
-        dbc.Col(derecho, md=4, style = {'background-color' : 'blue'}),
+        dbc.Col(navegador, md=12, style = {'background-color' : '#188EBE'}),
+        dbc.Col(izquierdo, md=4, style = {'background-color' : '#D8DFFB'}),
+        dbc.Col(derecho, md=8, style = {'background-color' : '#D8FBF9'}),
     ])
 ])

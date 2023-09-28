@@ -2,12 +2,14 @@ import dash
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 import math
+from dash import html
 
 #importamos el frontend
 from frontend.main import layout
 
 app = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.layout = layout
+
 
 @app.callback(
     Output('salidaCirculo', 'children'),
