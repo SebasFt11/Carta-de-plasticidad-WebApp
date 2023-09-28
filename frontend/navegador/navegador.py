@@ -2,15 +2,17 @@ import dash
 import dash_bootstrap_components as dbc
 from dash import html
 
-navegador = dbc.Container((
-    html.H1('Clasificación de suelos', style = {'color': 'white'}),
-    html.Hr(style = {"border-color" : "white", "border-width" : "5px"}),
-    html.H2('Sebastian David Lopez', style = {'color': 'white'}),
-    html.Img(src='/assets/imagenes/mi_imagen.jpg', alt='Mi Imagen', style={'max-width': '100%'}),
+navegador = dbc.Container([
+    dbc.Tabs(
+        [
+            dbc.Tab(label="¿Cómo funciona?", tab_id="tab-1", style = {'height' : '40px','background-color' : '#B4D6E4', 'color' : 'black', 'border-top' : '5px solid #055E97', 'border-right' : '1px solid white'}),
+            dbc.Tab(label="Caracteristicas del suelo", tab_id="tab-2",style = {'background-color' : '#B4D6E4', 'border-top' : '5px solid #055E97', 'border-right' : '1px solid white'}),
+            dbc.Tab(label="¿Qué suelo tengo?", tab_id="tab-3",style = {'background-color' : '#B4D6E4', 'border-top' : '5px solid #055E97'})
+        ],
+        id="tabs",
+        active_tab="tab-1",
+    ),
 
-    dbc.Row([
-         dbc.Col("¿Cómo funciona?", md=3, style = {'height' : '40px','background-color' : '#B4D6E4', 'color' : 'black', 'border-top' : '5px solid #055E97', 'border-right' : '1px solid white'}),
-         dbc.Col("Características del suelo", md=6, style = {'background-color' : '#B4D6E4', 'border-top' : '5px solid #055E97', 'border-right' : '1px solid white'}),
-         dbc.Col("¿Qué suelo tengo?", md=3, style = {'background-color' : '#B4D6E4', 'border-top' : '5px solid #055E97'}),
-    ])
-))
+    html.Div(id="tab-content", className="p-4"),
+])
+        
