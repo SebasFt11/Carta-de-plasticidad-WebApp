@@ -6,6 +6,7 @@ resultado = dbc.Card([
      dbc.CardHeader("Resultados"),
     dbc.CardBody([
         html.H5("Tu suelo es..."),
-        html.P("Este suelo tiene las siguientes caracteristicas")
+        html.P("Este suelo tiene las siguientes caracteristicas"),
+        html.Div(id='resultado-clasificacion', className="p-4")
     ])
 ])
