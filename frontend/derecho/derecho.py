@@ -28,9 +28,9 @@ from frontend.derecho.resultado import *
 
 derecho = dbc.Container([
     dbc.Row([
-        dbc.Col(textura, md=4,style = {'height' : '40px','background-color' : '#B4D6E4', 'color' : 'black', 'border-top' : '5px solid #055E97', 'border-right' : '1px solid white'}),
-        dbc.Col(permeabilidad, md=4,style = {'background-color' : '#B4D6E4', 'border-top' : '5px solid #055E97', 'border-right' : '1px solid white'}),
-        dbc.Col(materia, md=4,style = {'background-color' : '#B4D6E4', 'border-top' : '5px solid #055E97'}),
+        dbc.Col(textura, md=4,style = {'background-color' : '#F4F9FF', 'color' : 'black', 'border-top' : '5px solid #055E97', 'border-right' : '1px solid white'}),
+        dbc.Col(permeabilidad, md=4,style = {'background-color' : '#F4F9FF', 'border-top' : '5px solid #055E97', 'border-right' : '1px solid white'}),
+        dbc.Col(materia, md=4,style = {'background-color' : '#F4F9FF', 'border-top' : '5px solid #055E97'}),
         dbc.Col(clasifica,),
         dbc.Col(resultado, md=12)
     ])

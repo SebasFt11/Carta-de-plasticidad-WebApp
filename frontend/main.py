@@ -8,10 +8,12 @@ from .izquierdo.izquierdo import izquierdo
 
 
 layout = dbc.Container([
-    html.H1('Clasificación de Suelos',style = {'background-color' : '#188EBE', 'color' : 'white'}),
     dbc.Row([
-        dbc.Col(navegador, md=12, style = {'background-color' : '#188EBE'}),
-        dbc.Col(izquierdo, md=4, style = {'background-color' : '#D8DFFB'}),
-        dbc.Col(derecho, md=8, style = {'background-color' : '#D8FBF9'}),
+        dbc.Col(html.H1('Clasificación de Suelos',style = {'background-color': '#188EBE', 'color': 'white'}), md = 12),
+    ]),
+    dbc.Row([
+        dbc.Col(navegador, md=12, style = {'background-color' : '#C9E2FF'}),
+        dbc.Col(izquierdo, md=3, style = {'background-color' : '#E9F3FF'}),
+        dbc.Col(derecho, md=9, style = {'background-color' : 'white'}),
     ])
 ])
