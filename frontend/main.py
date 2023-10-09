@@ -2,9 +2,9 @@ import dash
 from dash import html
 import dash_bootstrap_components as dbc
 
-from .navegador.navegador import navegador
-from .derecho.derecho import derecho
-from .izquierdo.izquierdo import izquierdo
+from .principal.navegador.navegador import navegador
+from .principal.derecho.derecho import derecho
+from .principal.izquierdo.izquierdo import izquierdo
 
 
 layout = dbc.Container([
@@ -17,3 +17,9 @@ layout = dbc.Container([
         dbc.Col(derecho, md=9, style = {'background-color' : 'white'}),
     ])
 ])
+
+from .secundaria.navegador1.navegador1 import navegador1
+from .secundaria.derecho1.derecho1 import derecho1
+from .secundaria.izquerdo1.izquierdo1 import izquierdo1
+
+

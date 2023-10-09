@@ -2,11 +2,11 @@ import dash
 import dash_bootstrap_components as dbc
 from dash import html
 
-from frontend.derecho.textura import *
-from frontend.derecho.permeabilidad import *
-from frontend.derecho.materia import *
-from frontend.derecho.clasifica import *
-from frontend.derecho.resultado import *
+from frontend.principal.derecho.textura import *
+from frontend.principal.derecho.permeabilidad import *
+from frontend.principal.derecho.materia import *
+from frontend.principal.derecho.clasifica import *
+from frontend.principal.derecho.resultado import *
 
 derecho = dbc.Container([
     html.H1('Clasificación'),
@@ -20,11 +20,11 @@ derecho = dbc.Container([
 import dash
 import dash_bootstrap_components as dbc
 
-from frontend.derecho.textura import *
-from frontend.derecho.permeabilidad import *
-from frontend.derecho.materia import *
-from frontend.derecho.clasifica import *
-from frontend.derecho.resultado import *
+from frontend.principal.derecho.textura import *
+from frontend.principal.derecho.permeabilidad import *
+from frontend.principal.derecho.materia import *
+from frontend.principal.derecho.clasifica import *
+from frontend.principal.derecho.resultado import *
 
 derecho = dbc.Container([
     dbc.Row([

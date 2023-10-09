@@ -5,7 +5,7 @@ from dash.dependencies import Input, Output, State
 
 #importamos el frontend
 from frontend.main import layout
-from frontend.navegador.navegador import *
+from frontend.principal.navegador.navegador import *
 
 app=dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.layout = layout
