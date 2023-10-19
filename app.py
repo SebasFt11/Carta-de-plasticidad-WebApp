@@ -8,6 +8,7 @@ from frontend.main import layout
 from frontend.principal.navegador.navegador import *
 
 app=dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 app.layout = layout
 @app.callback(
     Output('tab-content', 'children'),
